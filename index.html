@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Cavaleiros do Zodíaco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/CSS/reset.css" />
+    <link rel="stylesheet" href="src/CSS/style.css" />
+    <link rel="stylesheet" href="src/CSS/responsive.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="src/imagens/logo_cdz.png" alt="Logo de Cavaleiros do Zodíaco" />
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione um personagem</h1>
+        <ul class="lista-de-personagens">
+          <li
+            class="personagem selecionado"
+            id="mu"
+            data-name="Mu de Áries"
+            data-description="Guardião da Casa de Áries, Mu é habilidoso no conserto de armaduras e criação de barreiras defensivas."
+          >
+            <img 
+            src="src/imagens/card-mu.jpg" 
+            alt="personagem Mu" />
+          </li>
+          <li
+            class="personagem"
+            id="aldebaran"
+            data-name="Aldebaran de Touro"
+            data-description="Possuidor de uma força imensa, Aldebaran é conhecido por sua lealdade e imponente golpe Grande Chifre."
+          >
+            <img
+              src="src/imagens/card-aldebaran.jpg"
+              alt="personagem Aldebaran"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="saga"
+            data-name="Saga de Gêmeos"
+            data-description="Saga é marcado por sua dualidade, alternando entre bondade e malícia. Além disso, seu poder lhe permite controlar dimensões."
+          >
+            <img src="src/imagens/card-saga.jpg" alt="personagem Saga" />
+          </li>
+          <li
+            class="personagem"
+            id="mascaradamorte"
+            data-name="Máscara da Morte de Câncer"
+            data-description="Conhecido por sua crueldade, Máscara da Morte usa sua técnica Ondas do Inferno para enviar oponentes ao Yomotsu."
+          >
+            <img
+              src="./src/imagens/card-mascaradamorte.jpg"
+              alt="personagem Máscara da Morte"
+            />
+          </li>
+          <li
+            class="personagem selecionado"
+            id="aiolia"
+            data-name="Aiolia de Leão"
+            data-description="Veloz e poderoso, Aiolia é determinado a proteger Atena e sua Casa, utiliza a técnica Relâmpago de Plasma. É irmão mais novo de Aiolos de Sagitário."
+          >
+            <img src="src/imagens/card-aiolia.jpg" alt="personagem Aiolia" />
+          </li>
+          <li
+            class="personagem"
+            id="shaka"
+            data-name="Shaka de Virgem"
+            data-description="Conhecido como o homem mais próximo de Deus, Shaka é a reencarnação de Buda e abre mão de sua visão para usar sua poderosa técnica Tesouro do Céu."
+          >
+            <img src="src/imagens/card-shaka.jpg" alt="personagem Shaka" />
+          </li>
+          <li
+            class="personagem"
+            id="dohko"
+            data-name="Dohko de Libra"
+            data-description="Um dos únicos sobreviventes da Guerra Santa do século XVIII, Dohko é sábio e paciente, mentor de Shiryu."
+          >
+            <img
+              src="src/imagens/card-dohko.jpg"
+              alt="personagem Dohko"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="milo"
+            data-name="Milo de Escorpião"
+            data-description="Milo é dotado de grande velocidade e destreza, sua Agulha Escarlate é capaz de penetrar até mesmo as defesas mais sólidas."
+          >
+            <img
+              src="./src/imagens/card-milo.jpg"
+              alt="personagem Milo"
+            />
+          </li>
+          <li
+            class="personagem selecionado"
+            id="aiolos"
+            data-name="Aiolos de Sagitário"
+            data-description="Renomado por sua justiça e coragem, Aiolos é lembrado como o cavaleiro de ouro mais nobre, tendo salvo Atena quando esta ainda era uma bebê."
+          >
+            <img src="src/imagens/card-aiolos.jpg" alt="personagem Aiolos" />
+          </li>
+          <li
+            class="personagem"
+            id="shura"
+            data-name="Shura de Capricórnio"
+            data-description="Determinado e implacável, Shura é um mestre da espada e usa sua Excalibur para cortar qualquer obstáculo em seu caminho."
+          >
+            <img src="src/imagens/card-shura.jpg" alt="personagem Shura" />
+          </li>
+          <li
+            class="personagem"
+            id="camus"
+            data-name="Camus de Áquario"
+            data-description="Calmo e frio, Camus domina técnicas de gelo e é conhecido pelo seu domínio do Zero Absoluto, mentor de Hyoga."
+          >
+            <img
+              src="src/imagens/card-camus.jpg"
+              alt="personagem Camus"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="afrodite"
+            data-name="Afrodite de Peixes"
+            data-description="Encantador e fatal, Afrodite utiliza de rosas para envenenar ou drenar o sangue de suas vítimas."
+          >
+            <img
+              src="./src/imagens/card-afrodite.jpg"
+              alt="personagem Afrodite"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img class="personagem-grande"
+          src="src/imagens/card-mu.png"
+          alt="personagem selecionado"
+        />
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Mu de Áries</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Guardião da casa de Áries, Mu é habilidoso no conserto de armaduras e criação de barreiras defensivas.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="src/JS/index.js"></script>
+  </body>
+</html>
